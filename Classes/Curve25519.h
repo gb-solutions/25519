@@ -40,4 +40,13 @@
 
 + (ECKeyPair*)generateKeyPair;
 
+/**
+ *  Generate a curve25519 key pair based on data
+ *
+ *  @param random data
+ *
+ *  @return curve25519 key pair.
+ */
+
++ (ECKeyPair*)generateKeyPair:(NSData *)random;
 @end
